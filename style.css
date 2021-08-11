@@ -92,5 +92,7 @@ body {
 .btn-white {
   /* background-color: #81d4fa; */
   color: rgb(247, 244, 244);
-  background-color: #4bb6e7;
+/*   background-color: #4bb6e7; */
+    background-color: #666666;
+
 }
