@@ -29,34 +29,10 @@ searchCity = () => {
     .catch((error) => {
       console.log(error);
       document.getElementById("city-name").innerText =
-        "Please search for a valid city 😩";
+        "Please search for a valid city";
     });
 };
 
-// searchCity = () => {
-//   const city = document.getElementById('city-input').value;
-//   getWeatherData(city)
-//   .then((res)=>{
-//     showWeatherData(res);
-//   }).catch((error)=>{
-//     console.log(error);
-//     console.log("Something happend");
-//   })
-// }
-
-/**
- * Show the weather data in HTML
-
-showWeatherData = (weatherData) => {
-    document.getElementById("city-name").innerText = weatherData.name;
-    document.getElementById("weather-type").innerText = weatherData.weather[0].main;
-    document.getElementById("temp").innerText = weatherData.main.temp;
-    document.getElementById("min-temp").innerText = weatherData.main.temp_min;
-    document.getElementById("max-temp").innerText = weatherData.main.temp_max;
-    document.getElementById("weather-output").classList.add('visible');
-  }
-
-*/
 
 /**
  * Show the weather data in HTML In fahrenheit to celsius
